@@ -10,10 +10,10 @@ public class Runner {
 
     public static void main(String[] args) {
 
-        Course course1 = new Course("Mathematics", "BSc", SimpleDateFormat("10-09-2018"), SimpleDateFormat("10-05-2019"));
+        Course course1 = new Course("Mathematics", "BSc", (10-9-2018), (10-05-2019));
         DBHelper.save(course1);
 
-        Course course2 = new Course("Psychology", "BA", "10/09/2018", "10/05/2019");
+        Course course2 = new Course("Psychology", "BA", '10-9-2018', '10-05-2019');
         DBHelper.save(course2);
 
         Instructor instructor1 = new Instructor("Prof Harry", course1);

@@ -15,13 +15,13 @@ public class Course {
     private Set<Student> students;
     private Set<Lesson> lessons;
     private Set<Instructor> instructors;
-    private SimpleDateFormat startDate;
-    private SimpleDateFormat endDate;
+    private Date startDate;
+    private Date endDate;
 
     public Course() {
     }
 
-    public Course(String title, String level, SimpleDateFormat startDate, SimpleDateFormat endDate) {
+    public Course(String title, String level, Date startDate, Date endDate) {
         this.title = title;
         this.level = level;
         this.startDate = startDate;
@@ -85,20 +85,20 @@ public class Course {
     }
 
     @Column(name="start_date")
-    public SimpleDateFormat getStartDate() {
+    public Date getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(SimpleDateFormat startDate) {
+    public void setStartDate(Date startDate) {
         this.startDate = startDate;
     }
 
     @Column(name="end_date")
-    public SimpleDateFormat getEndDate() {
+    public Date getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(SimpleDateFormat endDate) {
+    public void setEndDate(Date endDate) {
         this.endDate = endDate;
     }
 }
